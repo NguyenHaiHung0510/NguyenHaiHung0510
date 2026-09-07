@@ -6,7 +6,9 @@
 
 English · [Tiếng Việt](README.vi.md)
 
-I build tools for my own life and work on university projects with teammates. I enjoy figuring out how a system should work, helping people get started, and improving what we build. I'm interested in internship and junior opportunities where I can keep learning and contribute to a team.
+I build tools for my own life and work on university projects with teammates. I enjoy figuring out how a system should work, helping people get started, and improving what we build. I welcome internship and junior opportunities where I can keep learning and contribute to a team.
+
+Coursework and semester projects will keep me busy through late November 2026, and I expect my schedule to gradually open up from early December.
 
 ## Projects
 

@@ -6,7 +6,9 @@
 
 [English](README.md) · Tiếng Việt
 
-Mình làm công cụ cho bản thân và cùng các bạn thực hiện đồ án ở trường. Mình thích tìm hiểu một hệ thống nên hoạt động thế nào, giúp mọi người bắt đầu và cùng cải tiến sản phẩm. Mình quan tâm đến cơ hội thực tập hoặc junior để tiếp tục học và đóng góp trong một nhóm phát triển.
+Mình làm công cụ cho bản thân và cùng các bạn thực hiện đồ án ở trường. Mình thích tìm hiểu một hệ thống nên hoạt động thế nào, giúp mọi người bắt đầu và cùng cải tiến sản phẩm. Mình luôn trân trọng các cơ hội thực tập hoặc junior để tiếp tục học và đóng góp trong một nhóm phát triển.
+
+Lịch học và các dự án trong kỳ khiến mình khá bận đến khoảng cuối tháng 11/2026; mình dự kiến sẽ dần có thêm thời gian từ đầu tháng 12.
 
 ## Dự án
 
