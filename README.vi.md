@@ -14,6 +14,8 @@ Lịch học và các dự án trong kỳ khiến mình khá bận đến khoả
 
 ### [microSched](https://github.com/NguyenHaiHung0510/microSched) — ứng dụng mình dùng hằng ngày
 
+[Xem trang giới thiệu](https://microsched.fly.dev/home)
+
 Ứng dụng web cá nhân để quản lý công việc, ghi chú, lịch và các mục theo dõi, sử dụng FastAPI, React và PostgreSQL. Mình dùng ứng dụng trong đời sống và tiếp tục điều chỉnh theo trải nghiệm thực tế.
 
 Hành trình này bắt đầu từ một [công cụ C++ chạy trên dòng lệnh](https://github.com/NguyenHaiHung0510/Code_HoTro_HocTap), qua [ứng dụng desktop Python/Flet](https://github.com/NguyenHaiHung0510/VC_QuanLyThoiGian), rồi đến dự án chính để mình học về kiến trúc phần mềm, triển khai ứng dụng và làm việc với AI coding agents.

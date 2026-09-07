@@ -14,6 +14,8 @@ Coursework and semester projects will keep me busy through late November 2026, a
 
 ### [microSched](https://github.com/NguyenHaiHung0510/microSched) — my everyday app
 
+[Visit the website](https://microsched.fly.dev/home?lang=en)
+
 A personal web app for tasks, notes, calendars and trackers, built with FastAPI, React and PostgreSQL. I use it in daily life and improve it as I discover what works and what doesn't.
 
 It grew from a [C++ command-line tool](https://github.com/NguyenHaiHung0510/Code_HoTro_HocTap), through a [Python/Flet desktop app](https://github.com/NguyenHaiHung0510/VC_QuanLyThoiGian), into my main project for learning about software architecture, deployment and working with AI coding agents.
