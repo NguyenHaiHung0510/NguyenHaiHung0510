@@ -2,13 +2,11 @@
 
 # Hi, I'm Hưng
 
-**A student at PTIT, Vietnam, learning AI engineering through software projects.**
+**A PTIT student in Vietnam. I want to become an AI engineer, so I’m learning on my own and building projects.**
 
 English · [Tiếng Việt](README.vi.md)
 
-I build tools for my own life and work on university projects with teammates. I enjoy figuring out how a system should work, helping people get started, and improving what we build. I welcome internship and junior opportunities where I can keep learning and contribute to a team.
-
-Coursework and semester projects will keep me busy through late November 2026, and I expect my schedule to gradually open up from early December.
+I still have a lot to figure out. Using microSched every day shows me where it falls short and what I need to learn next. In university projects, I’m often both the team lead and the main presenter. I’m open to internships and junior roles where I can keep learning and contribute to a team.
 
 ## Projects
 
@@ -20,38 +18,36 @@ A personal web app for tasks, notes, calendars and trackers, built with FastAPI,
 
 It grew from a [C++ command-line tool](https://github.com/NguyenHaiHung0510/Code_HoTro_HocTap), through a [Python/Flet desktop app](https://github.com/NguyenHaiHung0510/VC_QuanLyThoiGian), into my main project for learning about software architecture, deployment and working with AI coding agents.
 
-### [FANG](https://github.com/PTIT-TTCS-Team-5/Fang) — exploring AI in recruitment
+- [Mimi](https://github.com/NguyenHaiHung0510/microSched/blob/develop/docs/mimi/README.md) is the assistant inside microSched. I used to give the same kind of task a different name every time, with typos and inconsistent capitalization. Mimi helped me standardize 68 task titles over three rounds. I reviewed the proposed changes before applying each batch.
+- [miGarden](https://github.com/NguyenHaiHung0510/miGarden) lets me automate and manage balcony watering in microSched. The IoT setup for Zone A is complete. I can manage the schedule and start watering from my phone. Once the house renovation is done, I’ll run the water line along the railing to the pots.
 
-A university team project for matching candidates and jobs. Alongside the ranking system, an agent helps HR explore applicants for a job posting, and a separate chatbot focuses on one applicant's profile.
+### [FANG](https://github.com/PTIT-TTCS-Team-5/Fang) — AI for miCareer
 
-I developed a two-way ranking pipeline that combines semantic and keyword retrieval with scoring for skills, experience and salary. One part I especially enjoyed was tuning it with Optuna and comparing ranking quality using MRR and nDCG@10 on synthetic candidate–job data. HR can inspect the rankings directly or ask the agent to call the ranking tool and filter applicants.
+FANG was an ambitious team project to build AI features for miCareer, our recruitment website. We wanted to help people at both ends of hiring, from finding a suitable job to taking a closer look at an application.
 
-I led the team, worked on architecture and integration, and wrote and presented the report. We used [miCareer-mini](https://github.com/PTIT-TTCS-Team-5/miCareer-mini), a Streamlit frontend, to develop and demonstrate the FastAPI backend. This was a course prototype, not a production recruitment service.
+- **Candidates** get job recommendations ranked using their CV and profile information.
+- **HR** starts with a ranking based on the job posting and applicant profiles. An agent uses tools to search and filter applicants quickly. Once a recruiter picks someone to look at more closely, a separate chatbot answers questions using that applicant’s CV and profile as context.
+
+I built the two-way ranking pipeline, combining semantic and keyword retrieval with scores for skills, experience, and salary. I especially enjoyed tuning it with Optuna and measuring ranking quality with MRR and nDCG@10 on synthetic candidate–job data.
+
+I led the team, worked on architecture and integration, wrote the report, and gave the main presentation. We tested and demonstrated the FastAPI backend in our course prototype, [miCareer-mini](https://github.com/PTIT-TTCS-Team-5/miCareer-mini), with a Streamlit frontend.
 
 ### [miCareer](https://github.com/NguyenHaiHung0510/miCareer) — building with a team
 
-A university team project: an IT recruitment website with a lightweight applicant tracking system (ATS). As team lead, I worked on shared foundations such as connection pooling, wrote setup and development guides, reviewed integration, and helped teammates debug problems.
+A university team project for an IT recruitment website with a lightweight applicant tracking system (ATS). As team lead, I worked on shared foundations such as connection pooling, wrote setup and development guides, reviewed integration, and helped teammates debug problems.
 
-My first experience leading a web project was [microShop](https://github.com/NguyenHaiHung0510/microShop). We started without web experience; getting a Java Servlet app running on Tomcat was our first breakthrough. I later worked with a team on a DevSecOps course project using microShop as the test application.
+My first experience leading a web project was [microShop](https://github.com/NguyenHaiHung0510/microShop). None of us knew how to build a website at the time. I looked for a way to get started, and getting our Java Servlet app to run felt like a small miracle xD. Later, I worked with a team on a DevSecOps course project to automate security testing across the software development lifecycle, using microShop as the test app.
 
 ## What I'm learning now
 
-I'm learning from Chip Huyền's *AI Engineering* alongside coursework and projects.
+I’ve been enjoying Chip Huyền’s *AI Engineering*. I’ve made it to chapter 4 and I’m trying out what I learn in my own projects.
 
-I'm also learning **harness engineering** through the workflow I use to build microSched. I stay responsible for product decisions and scope while a coordinating agent can implement changes or delegate focused tasks. I use independent reviews and test evidence to challenge the results, and keep decisions and lessons in project docs and memory. The aim is a way of working I can carry with me as models and tools change.
-
-Around microSched, I'm designing three connected projects:
-
-- **Mimi**, an assistant throughout microSched, designed to work with my tasks, notes, trackers and documents and take actions with appropriate approval. Longer term, if miGarden works out, I'd love Mimi to help care for my flowers, from suggesting watering to carrying out an approved watering request.
-- **microLink**, an MCP connection between my coding-agent workspace, currently Codex, and microSched. I'm designing it so the agent can read and update app data through specific tools, with permissions and confirmations appropriate to the action.
-- **miGarden**, a way to connect my love of growing flowers with IoT: sensing conditions for individual pots and controlling watering from microSched. Hardware, unreliable connections and water make this an ambitious project with plenty that can go wrong. I want to start with a small pilot, learn from what fails, and keep working toward a system I can use and trust.
-
-My goal this semester is to build solid first versions of these projects, then keep developing them beyond the coursework.
+I’m learning **harness engineering** on microSched. I set the scope first, then work through architecture options with agents. I write down my decisions and the evidence I used so I can revisit them later.
 
 Another personal experiment is [ClaudeRelay](https://github.com/NguyenHaiHung0510/ClaudeRelay), a Windows launcher I built to keep using the Claude Code CLI with alternative model backends when its usual route was unavailable. It changes routing for the launched process without rewriting my normal Claude Code configuration.
 
 ## Beyond projects
 
-I play football and piano, enjoy inline skating, and grow flowers on my balcony. I like quiet places, nature and reading when the semester leaves room for it.
+I enjoy playing football and piano, inline skating, and growing flowers on my balcony. I like quiet places, nature, and reading when I have time away from my studies.
 
-I'm comfortable communicating and working in English. In high school, I was a member of my school's English debate and academic competition teams (though I never made it to the actual competitions!). At university, I'm often the main presenter for our team projects, explaining the system, walking through the demo and answering questions about our design choices. Presenting is one of the parts of team projects I feel most confident about.
+I’m comfortable communicating and working in English. In high school, I was on the English debate and English academic competition teams (though I never made it to an actual competition xD). Presenting is one of the things I’m most confident about on team projects. I enjoy figuring out how a system works, explaining it in a demo, and answering questions about our design choices.

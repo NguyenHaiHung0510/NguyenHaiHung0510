@@ -2,56 +2,52 @@
 
 # Chào bạn, mình là Hưng
 
-**Sinh viên PTIT, đang học AI engineering qua các dự án phần mềm.**
+**Mình là sinh viên PTIT. Mình muốn trở thành AI engineer nên đang tự học và làm dự án.**
 
 [English](README.md) · Tiếng Việt
 
-Mình làm công cụ cho bản thân và cùng các bạn thực hiện đồ án ở trường. Mình thích tìm hiểu một hệ thống nên hoạt động thế nào, giúp mọi người bắt đầu và cùng cải tiến sản phẩm. Mình luôn trân trọng các cơ hội thực tập hoặc junior để tiếp tục học và đóng góp trong một nhóm phát triển.
-
-Lịch học và các dự án trong kỳ khiến mình khá bận đến khoảng cuối tháng 11/2026; mình dự kiến sẽ dần có thêm thời gian từ đầu tháng 12.
+Còn nhiều thứ mình phải học. Với microSched, mình dùng chính thứ mình làm mỗi ngày, thấy chỗ nào vướng thì quay lại sửa. Trong các đồ án ở trường, mình thường làm trưởng nhóm và là người thuyết trình chính. Mình cũng sẵn sàng trao đổi về cơ hội thực tập hoặc vị trí junior.
 
 ## Dự án
 
 ### [microSched](https://github.com/NguyenHaiHung0510/microSched) — ứng dụng mình dùng hằng ngày
 
-[Xem trang giới thiệu](https://microsched.fly.dev/home)
+[Xem trang giới thiệu](https://microsched.fly.dev/home?lang=vi)
 
 Ứng dụng web cá nhân để quản lý công việc, ghi chú, lịch và các mục theo dõi, sử dụng FastAPI, React và PostgreSQL. Mình dùng ứng dụng trong đời sống và tiếp tục điều chỉnh theo trải nghiệm thực tế.
 
 Hành trình này bắt đầu từ một [công cụ C++ chạy trên dòng lệnh](https://github.com/NguyenHaiHung0510/Code_HoTro_HocTap), qua [ứng dụng desktop Python/Flet](https://github.com/NguyenHaiHung0510/VC_QuanLyThoiGian), rồi đến dự án chính để mình học về kiến trúc phần mềm, triển khai ứng dụng và làm việc với AI coding agents.
 
-### [FANG](https://github.com/PTIT-TTCS-Team-5/Fang) — khám phá AI trong tuyển dụng
+- [Mimi](https://github.com/NguyenHaiHung0510/microSched/blob/develop/docs/mimi/README.md) là trợ lý ngay trong microSched. Trước đó, cùng một việc mà mình đặt tên đủ kiểu, lúc sai chính tả, lúc viết hoa viết thường tùm lum. Mình dùng Mimi để chuẩn hóa tên 68 task qua ba lượt, xem trước đề xuất rồi mới áp dụng từng lượt.
+- [miGarden](https://github.com/NguyenHaiHung0510/miGarden) giúp mình tự động hóa việc tưới cây và quản lý ngay trong microSched. Phần IoT của Khu A đã xong. Mình có thể sửa lịch và bật tưới từ điện thoại. Khi nhà sửa xong, mình sẽ đi ống nước dọc lan can tới các chậu.
 
-Đồ án nhóm về đánh giá mức độ phù hợp giữa ứng viên và công việc. Bên cạnh hệ thống xếp hạng, agent giúp HR tìm hiểu ứng viên trong một tin tuyển dụng, còn chatbot riêng hỗ trợ hỏi sâu về hồ sơ từng người.
+### [FANG](https://github.com/PTIT-TTCS-Team-5/Fang) — phần AI của miCareer
 
-Mình phát triển thuật toán xếp hạng theo cả hai chiều, kết hợp tìm kiếm ngữ nghĩa và từ khóa với điểm số về kỹ năng, kinh nghiệm và lương. Một phần mình thấy rất thú vị là tuning bằng Optuna, rồi so sánh chất lượng xếp hạng qua MRR và nDCG@10 trên dữ liệu ứng viên–công việc giả lập. HR có thể tự xem bảng xếp hạng hoặc yêu cầu agent gọi ranking tool và lọc ứng viên.
+FANG là một đồ án nhóm khá tham vọng. Tụi mình muốn đưa AI vào cả hai luồng trên web tuyển dụng miCareer, từ lúc ứng viên tìm việc phù hợp đến lúc HR xem kỹ từng hồ sơ.
 
-Mình làm trưởng nhóm, tham gia thiết kế kiến trúc và tích hợp hệ thống, viết báo cáo và thuyết trình. Nhóm dùng [miCareer-mini](https://github.com/PTIT-TTCS-Team-5/miCareer-mini), giao diện Streamlit, để phát triển và trình diễn backend FastAPI. Đây là bản thử nghiệm trong khuôn khổ môn học, chưa phải dịch vụ tuyển dụng vận hành thực tế.
+- **Ứng viên** nhận gợi ý việc làm được xếp hạng theo CV và thông tin hồ sơ của mình.
+- **HR** bắt đầu từ danh sách ứng viên được xếp hạng theo hồ sơ và tin tuyển dụng. Khi cần tìm hoặc lọc nhanh, HR có thể nhờ agent gọi các công cụ có sẵn. Khi muốn tìm hiểu kỹ một người, HR có thể hỏi chatbot riêng. Chatbot dựa vào CV và hồ sơ của đúng ứng viên đó để trả lời.
+
+Mình xây dựng pipeline xếp hạng hai chiều, kết hợp tìm kiếm ngữ nghĩa và từ khóa với điểm về kỹ năng, kinh nghiệm và lương. Phần mình thích nhất là dùng Optuna để tinh chỉnh và đo chất lượng xếp hạng bằng MRR và nDCG@10 trên dữ liệu ứng viên và việc làm giả lập.
+
+Mình làm trưởng nhóm, tham gia thiết kế kiến trúc và tích hợp, viết báo cáo và phụ trách thuyết trình chính. Nhóm dùng [miCareer-mini](https://github.com/PTIT-TTCS-Team-5/miCareer-mini), bản thử nghiệm với giao diện Streamlit, để thử và trình diễn backend FastAPI trong môn học.
 
 ### [miCareer](https://github.com/NguyenHaiHung0510/miCareer) — làm web cùng đồng đội
 
 Website tuyển dụng IT và hệ thống quản lý hồ sơ ứng tuyển (ATS) nhỏ gọn, thực hiện trong đồ án nhóm. Với vai trò trưởng nhóm, mình xây dựng một số phần dùng chung như connection pool, viết hướng dẫn thiết lập và phát triển, review tích hợp và hỗ trợ các bạn xử lý lỗi.
 
-Trải nghiệm đầu tiên dẫn dắt một nhóm làm web của mình là [microShop](https://github.com/NguyenHaiHung0510/microShop). Cả nhóm bắt đầu khi chưa biết làm web; chạy được ứng dụng Java Servlet trên Tomcat là bước tiến đầu tiên. Sau đó, mình cùng một nhóm thực hiện đồ án DevSecOps, dùng microShop làm ứng dụng thử nghiệm.
+Trải nghiệm đầu tiên dẫn dắt một nhóm làm web của mình là [microShop](https://github.com/NguyenHaiHung0510/microShop). Lúc đó cả nhóm chưa biết làm website. Mình đi tìm cách làm. Đến lúc chạy được ứng dụng Java Servlet đầu tiên, mình thấy như vừa làm được một kỳ tích xD. Sau đó, mình cùng một nhóm thực hiện đồ án DevSecOps với mục tiêu là tự động hóa quy trình kiểm thử bảo mật trong vòng đời phát triển phần mềm, dùng microShop làm ứng dụng thử nghiệm.
 
 ## Mình đang học gì
 
-Mình học theo cuốn *AI Engineering* của Chip Huyền, kết hợp với các môn học và dự án.
+Mình rất thích *AI Engineering* của chị Chip Huyền. Mình mới đọc tới chương 4 và đang thử áp dụng những gì học được vào các dự án của mình.
 
-Mình cũng học **harness engineering** từ chính cách phát triển microSched. Mình giữ quyền quyết định về sản phẩm và phạm vi công việc, còn agent điều phối có thể trực tiếp thực hiện hoặc giao các phần việc rõ ràng cho agents khác. Mình dùng review độc lập và bằng chứng kiểm thử để kiểm tra kết quả, rồi lưu các quyết định và bài học vào docs và memory. Mục tiêu là giữ được cách làm việc này khi đổi model hay công cụ.
-
-Xung quanh microSched, mình đang thiết kế ba dự án kết nối với nhau:
-
-- **Mimi**, trợ lý tích hợp trong microSched, làm việc với task, note, tracker và tài liệu, đồng thời thực hiện các thao tác với sự phê duyệt phù hợp. Xa hơn, nếu miGarden thành công, mình mong Mimi có thể giúp chăm hoa, từ gợi ý tưới đến thực hiện yêu cầu tưới đã được mình duyệt.
-- **microLink**, kết nối môi trường coding agent mình đang dùng, hiện là Codex, với microSched qua MCP. Mình thiết kế nó để agent có thể đọc và cập nhật dữ liệu ứng dụng qua các công cụ cụ thể, với quyền truy cập và bước xác nhận phù hợp cho từng thao tác.
-- **miGarden**, dự án nối sở thích trồng hoa với IoT: theo dõi điều kiện từng chậu và điều khiển tưới từ microSched. Phần cứng, mạng chập chờn và việc đưa nước vào hệ thống khiến đây là một dự án khó, có nhiều thứ có thể hỏng. Mình muốn bắt đầu bằng vài chậu thử nghiệm, học từ những lần không chạy như ý và kiên trì làm đến khi có một hệ thống dùng được, đáng tin.
-
-Mình đặt mục tiêu làm ra những phiên bản đầu tiên thật chỉn chu trong kỳ này, rồi tiếp tục phát triển chúng sau môn học.
+Mình học **harness engineering** ngay trên microSched. Mình đặt phạm vi trước, cùng agent nghĩ qua các phương án kiến trúc, rồi ghi lại lựa chọn và bằng chứng mình dựa vào.
 
 Một thử nghiệm cá nhân khác là [ClaudeRelay](https://github.com/NguyenHaiHung0510/ClaudeRelay), launcher trên Windows mình làm để tiếp tục dùng Claude Code CLI với backend model khác khi đường kết nối thông thường không khả dụng. Nó chỉ thay đổi routing cho tiến trình được khởi chạy, không sửa cấu hình Claude Code mình dùng thường ngày.
 
 ## Ngoài các dự án
 
-Mình chơi bóng đá, piano, trượt patin và trồng hoa trên ban công. Mình thích những nơi yên tĩnh, cảnh sắc thiên nhiên và đọc sách khi có thời gian ngoài việc học.
+Mình thích chơi bóng đá, chơi đàn piano, trượt patin và trồng hoa trên ban công. Mình thích những nơi yên tĩnh, cảnh sắc thiên nhiên và đọc sách khi có thời gian ngoài việc học.
 
-Mình tự tin giao tiếp và làm việc bằng tiếng Anh. Hồi cấp ba, mình từng tham gia đội tuyển hùng biện tiếng Anh và đội tuyển học sinh giỏi Anh (dù chưa ra được “đấu trường” thật!). Ở đại học, mình thường là người thuyết trình chính cho đồ án nhóm: giải thích hệ thống, demo sản phẩm và trả lời câu hỏi về các lựa chọn thiết kế. Đó cũng là một trong những phần mình tự tin nhất khi làm đồ án nhóm.
+Mình tự tin giao tiếp và làm việc bằng tiếng Anh. Hồi cấp ba, mình từng tham gia đội tuyển hùng biện tiếng Anh và đội tuyển học sinh giỏi Anh (dù chưa ra được “đấu trường” thật bao giờ xD). Thuyết trình là một trong những phần mình tự tin nhất khi làm đồ án nhóm. Mình thích tìm hiểu hệ thống chạy ra sao, rồi giải thích, demo và trả lời câu hỏi về những lựa chọn thiết kế.
